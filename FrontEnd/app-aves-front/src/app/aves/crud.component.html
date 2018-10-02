@@ -1,0 +1,43 @@
+<div class="card bg-dark text-white">
+  <div class="card-header">{{ titulo }}</div>
+  <div class="card-body">
+
+    <form>
+
+      <div class="form-group row">
+        <label for="id" class="col-form-label col-sm-2">CD AVE</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="ave.cdave" name="cdave">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="nombreComun" class="col-form-label col-sm-2">Nombre Comun</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="ave.nombreComun" name="nombreComun">
+        </div>
+      </div>
+
+        <div class="form-group row">
+          <label for="nombreCientifico" class="col-form-label col-sm-2">nombre Cientifico</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" [(ngModel)]="ave.nombreCientifico" name="nombreCientifico">
+          </div>
+        </div>
+
+
+
+      <div class="form-group row">
+        <div class="col-sm-6">
+          <button class="btn btn-primary" role="button" (click)= 'create()' >Crear</button>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-6">
+            <button class="btn btn-primary" role="button" (click)= 'update()'>Actualizar</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
